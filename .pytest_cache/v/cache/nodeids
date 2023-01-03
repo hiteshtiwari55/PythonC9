@@ -1,1 +1,4 @@
-[]
+[
+  "pytestGit/test_demo1.py::test_first_entry",
+  "pytestGit/test_demo1.py::test_order"
+]
