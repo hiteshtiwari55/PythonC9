@@ -1,4 +1,5 @@
 [
   "pytestGit/test_demo1.py::test_first_entry",
-  "pytestGit/test_demo1.py::test_order"
+  "pytestGit/test_demo1.py::test_order",
+  "pytestGit/test_gitactions.py::test_download_s3_objects"
 ]
