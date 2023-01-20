@@ -3,11 +3,14 @@
 
 name: Python application
 
-on:
-  push:
+on: 
+   workflow_dispatch:
+   push:
     branches: [ "main" ]
-  pull_request:
+   pull_request:
     branches: [ "main" ]
+    
+
 
 permissions:
   contents: read
