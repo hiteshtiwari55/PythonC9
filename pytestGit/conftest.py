@@ -15,11 +15,11 @@ AWS_REGION="eu-west-2"
 @pytest.fixture
 def get_aws_sts_assume_role_credentials():
     sts_client = boto3.client("sts")
-    aws_assume_role_arn = os.environ.get("AWS_ASSUME_ROLE_ARN")
+    aws_assume_role_arn = os.environ['AWS_ASSUME_ROLE_ARN']
     print(aws_assume_role_arn)
     
     credentials = sts_client.assume_role(
-        RoleArn=aws_assume_role_arn, RoleSessionName="MySessionName", DurationSeconds=3600)
+        RoleArn="aws_assume_role_arn", RoleSessionName="MySessionName", DurationSeconds=3600)
 
     return credentials["Credentials"]
 
