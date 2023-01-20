@@ -15,7 +15,7 @@ AWS_REGION="eu-west-2"
 @pytest.fixture
 def get_aws_sts_assume_role_credentials():
     sts_client = boto3.client("sts")
-    aws_assume_role_arn = os.environ['AWS_ASSUME_ROLE_ARN']
+    aws_assume_role_arn = "arn:aws:iam::163105429840:role/ht-github-actions-role"
     print(aws_assume_role_arn)
     
     credentials = sts_client.assume_role(
