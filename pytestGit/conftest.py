@@ -19,7 +19,7 @@ def get_aws_sts_assume_role_credentials():
     print(aws_assume_role_arn)
     
     credentials = sts_client.assume_role(
-        RoleArn="aws_assume_role_arn", RoleSessionName="MySessionName", DurationSeconds=3600)
+        RoleArn=aws_assume_role_arn, RoleSessionName="MySessionName", DurationSeconds=3600)
 
     return credentials["Credentials"]
 
