@@ -1,0 +1,11 @@
+# Created by pytest automatically.
+*.pyc
+*.iml
+*.xml
+.cache/git 
+.idea/
+.pytest_cache/
+*.log
+*__pycache__/
+config.py
+
